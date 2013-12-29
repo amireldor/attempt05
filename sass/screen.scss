@@ -12,7 +12,7 @@ $section-gutter: $section-margin + $section-padding;
 
 $color-bg: #00284c; 
 $color-a: #7de1ff; 
-$color-opacity: .64;
+$color-opacity: .43;
 
 @mixin media-wide {
 	@media (min-width: 600px) {
@@ -84,7 +84,7 @@ h2 {
 }
 
 #content {
-	background: rgba($color-a, $color-opacity * .7);
+	background: rgba($color-a, $color-opacity * 1.2);
 
 	@include media-wide {
 		width: $site-width * 0.6 - 2*$section-gutter;
@@ -93,7 +93,7 @@ h2 {
 }
 
 #sidebar {
-	background: rgba($color-a, $color-opacity * .2);
+	background: rgba($color-a, $color-opacity * .7);
 
 	@include media-wide {
 		width: $site-width * 0.4 - 2*$section-gutter;
@@ -117,12 +117,16 @@ body.front {
 		$header-pos: 120px;
 
 		#header {
+			$padding: 30px;
+
 			position: fixed;
-			width: $header-width;
+			width: $header-width - $padding;
 			top: 0;
 			bottom: 0;
 			left: 50%;
 			margin-left: -($site-width/2) + $header-pos;
+
+			padding: 143px $padding 0;
 		}
 
 		#content, #sidebar {
