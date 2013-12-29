@@ -1,0 +1,143 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$site-width: 1000px;
+$section-margin: 18px;
+$section-padding: 18px;
+$section-gutter: $section-margin + $section-padding;
+
+$color-bg: #00284c; 
+$color-a: #7de1ff; 
+$color-opacity: .64;
+
+@mixin media-wide {
+	@media (min-width: 600px) {
+		@content;
+	}
+}
+
+body {
+	color: white;
+	background: $color-bg;
+	text-align: center;
+	font-size: 14pt;
+	font-family: Verdana, sans;
+
+	@include media-wide {
+		background: {
+			image: url("../waterfall.jpg");
+			size: 100% auto;
+			repeat: no-repeat;
+		}
+	}
+}
+
+article {
+	text-align: left;
+	margin-bottom: 1em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1 {
+	color: white;
+	font-size: 130%;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+h2 {
+	color: white;
+	font-size: 120%;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+#header {
+	background: rgba($color-a, $color-opacity);
+
+	h1 {
+		font-size: 334%; 
+	}
+}
+
+#main {
+	color: black;
+
+	overflow: hidden;
+	@include media-wide {
+		width: $site-width;
+		margin: 0 auto;
+	}
+
+	section {
+		margin: $section-margin;
+		border-radius: 8px;
+		padding: $section-padding;
+	}
+}
+
+#content {
+	background: rgba($color-a, $color-opacity * .7);
+
+	@include media-wide {
+		width: $site-width * 0.6 - 2*$section-gutter;
+		float: left;
+	}
+}
+
+#sidebar {
+	background: rgba($color-a, $color-opacity * .2);
+
+	@include media-wide {
+		width: $site-width * 0.4 - 2*$section-gutter;
+		float: left;
+	}
+}
+
+#footer {
+	font-size: small;
+	background: rgba(black, .9);
+	padding: 30px 0 70px;
+	@include media-wide {
+		clear: both;
+	}
+}
+
+body.front {
+	@include media-wide {
+
+		$header-width: 340px;
+		$header-pos: 120px;
+
+		#header {
+			position: fixed;
+			width: $header-width;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-left: -($site-width/2) + $header-pos;
+		}
+
+		#content, #sidebar {
+			float: none;
+			width: auto;		
+			padding-left: $header-pos + $header-width + 24px;
+
+			color: white;
+			background: transparent;
+		}
+
+		#footer {
+			color: black;
+			background: transparent;
+		}
+
+	}
+}
