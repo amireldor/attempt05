@@ -69,6 +69,8 @@ h2 {
 	h1 {
 		font-size: 334%; 
 	}
+
+	padding-bottom: 20px;
 }
 
 #main {
@@ -147,5 +149,25 @@ body.front {
 			background: transparent;
 		}
 
+	}
+}
+
+#nav {
+	ul {
+		li {
+			display: inline-block;
+			a {
+				color: black;
+				font-size: 85%;
+				text-decoration: none;
+				padding: 5px;
+				border-radius: 5px;
+
+				&:hover {
+					background: rgba($color-a, $color-opacity*.8);
+				}
+			}
+			margin: 5px 2px;
+		}
 	}
 }
