@@ -10,8 +10,8 @@ $section-margin: 18px;
 $section-padding: 18px;
 $section-gutter: $section-margin + $section-padding;
 
-$color-bg: #00284c; 
-$color-a: #7de1ff; 
+$color-bg: #00284c;
+$color-a: #7de1ff;
 $color-opacity: .43;
 
 @mixin media-wide {
@@ -51,26 +51,37 @@ p {
 
 h1 {
 	color: white;
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold;
 	margin-bottom: 8px;
+	padding: 3px;
 }
 
 h2 {
 	color: white;
-	font-size: 120%;
+	font-size: 112%;
 	font-weight: bold;
 	margin-bottom: 8px;
+	padding: 3px;
+}
+
+#main h1, h2 {
+	background: rgba($color-a, $color-opacity*0.74);
+	border-radius: 5px;
 }
 
 #header {
 	background: rgba($color-a, $color-opacity);
 
+	padding: 10px 0;
+
 	h1 {
-		font-size: 334%; 
+		font-size: 130%;
 	}
 
-	padding-bottom: 20px;
+	#slogan {
+		font-size: 80%;
+	}
 }
 
 #main {
@@ -118,6 +129,17 @@ h2 {
 }
 
 body.front {
+
+	#header {
+		h1 {
+			font-size: 334%;
+		}
+
+		#slogan {
+			font-size: 110%;
+		}
+	}
+
 	@include media-wide {
 
 		$header-width: 340px;
