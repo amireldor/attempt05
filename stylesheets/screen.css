@@ -80,7 +80,7 @@ body {
 @media (min-width: 600px) {
   /* line 25, ../sass/screen.scss */
   body {
-    size: 100% auto;
+    background-size: 100% auto;
   }
 }
 
