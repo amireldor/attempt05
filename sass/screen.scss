@@ -113,6 +113,7 @@ h2 {
 	padding: 30px 0 70px;
 	@include media-wide {
 		clear: both;
+		margin-top: 100px;
 	}
 }
 
@@ -146,7 +147,10 @@ body.front {
 
 		#footer {
 			color: black;
-			background: transparent;
+			background: rgba(white, $color-opacity*0.34);
+			width: $site-width*0.34;
+			margin: 100px auto 0;
+			padding: 0;
 		}
 
 	}
@@ -164,7 +168,7 @@ body.front {
 				border-radius: 5px;
 
 				&:hover {
-					background: rgba($color-a, $color-opacity*.8);
+					background: rgba($color-a, $color-opacity*0.8);
 				}
 			}
 			margin: 5px 2px;

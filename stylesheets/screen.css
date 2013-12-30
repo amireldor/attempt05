@@ -178,11 +178,12 @@ h2 {
   /* line 110, ../sass/screen.scss */
   #footer {
     clear: both;
+    margin-top: 100px;
   }
 }
 
 @media (min-width: 600px) {
-  /* line 125, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   body.front #header {
     position: fixed;
     width: 310px;
@@ -192,7 +193,7 @@ h2 {
     margin-left: -380px;
     padding: 143px 30px 0;
   }
-  /* line 138, ../sass/screen.scss */
+  /* line 139, ../sass/screen.scss */
   body.front #content, body.front #sidebar {
     float: none;
     width: auto;
@@ -200,19 +201,22 @@ h2 {
     color: white;
     background: transparent;
   }
-  /* line 147, ../sass/screen.scss */
+  /* line 148, ../sass/screen.scss */
   body.front #footer {
     color: black;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.1462);
+    width: 340px;
+    margin: 100px auto 0;
+    padding: 0;
   }
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #nav ul li {
   display: inline-block;
   margin: 5px 2px;
 }
-/* line 159, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #nav ul li a {
   color: black;
   font-size: 85%;
@@ -220,7 +224,7 @@ h2 {
   padding: 5px;
   border-radius: 5px;
 }
-/* line 166, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #nav ul li a:hover {
   background: rgba(125, 225, 255, 0.344);
 }
