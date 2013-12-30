@@ -118,70 +118,71 @@ h2 {
 /* line 66, ../sass/screen.scss */
 #header {
   background: rgba(125, 225, 255, 0.43);
+  padding-bottom: 20px;
 }
 /* line 69, ../sass/screen.scss */
 #header h1 {
   font-size: 334%;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 #main {
   color: black;
   overflow: hidden;
 }
 @media (min-width: 600px) {
-  /* line 74, ../sass/screen.scss */
+  /* line 76, ../sass/screen.scss */
   #main {
     width: 1000px;
     margin: 0 auto;
   }
 }
-/* line 83, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 #main section {
   margin: 18px;
   border-radius: 8px;
   padding: 18px;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #content {
   background: rgba(125, 225, 255, 0.516);
 }
 @media (min-width: 600px) {
-  /* line 90, ../sass/screen.scss */
+  /* line 92, ../sass/screen.scss */
   #content {
     width: 528px;
     float: left;
   }
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 #sidebar {
   background: rgba(125, 225, 255, 0.301);
 }
 @media (min-width: 600px) {
-  /* line 99, ../sass/screen.scss */
+  /* line 101, ../sass/screen.scss */
   #sidebar {
     width: 328px;
     float: left;
   }
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 #footer {
   font-size: small;
   background: rgba(0, 0, 0, 0.9);
   padding: 30px 0 70px;
 }
 @media (min-width: 600px) {
-  /* line 108, ../sass/screen.scss */
+  /* line 110, ../sass/screen.scss */
   #footer {
     clear: both;
   }
 }
 
 @media (min-width: 600px) {
-  /* line 123, ../sass/screen.scss */
+  /* line 125, ../sass/screen.scss */
   body.front #header {
     position: fixed;
     width: 310px;
@@ -191,7 +192,7 @@ h2 {
     margin-left: -380px;
     padding: 143px 30px 0;
   }
-  /* line 136, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   body.front #content, body.front #sidebar {
     float: none;
     width: auto;
@@ -199,9 +200,27 @@ h2 {
     color: white;
     background: transparent;
   }
-  /* line 145, ../sass/screen.scss */
+  /* line 147, ../sass/screen.scss */
   body.front #footer {
     color: black;
     background: transparent;
   }
+}
+
+/* line 157, ../sass/screen.scss */
+#nav ul li {
+  display: inline-block;
+  margin: 5px 2px;
+}
+/* line 159, ../sass/screen.scss */
+#nav ul li a {
+  color: black;
+  font-size: 85%;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* line 166, ../sass/screen.scss */
+#nav ul li a:hover {
+  background: rgba(125, 225, 255, 0.344);
 }
