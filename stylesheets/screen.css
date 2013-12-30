@@ -67,39 +67,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 body {
   color: white;
   background: #00284c;
   text-align: center;
   font-size: 14pt;
   font-family: Verdana, sans;
+  background-image: url("../waterfall.jpg");
+  background-repeat: no-repeat;
 }
 @media (min-width: 600px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 25, ../sass/screen.scss */
   body {
-    background-image: url("../waterfall.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    size: 100% auto;
   }
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 article {
   text-align: left;
   margin-bottom: 1em;
 }
-/* line 43, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 article:last-child {
   margin-bottom: 0;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 p {
   margin-bottom: 12px;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 h1 {
   color: white;
   font-size: 140%;
@@ -108,7 +108,7 @@ h1 {
   padding: 3px;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 h2 {
   color: white;
   font-size: 112%;
@@ -117,93 +117,93 @@ h2 {
   padding: 3px;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 #main h1, h2 {
   background: rgba(125, 225, 255, 0.3182);
   border-radius: 5px;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 #header {
   background: rgba(125, 225, 255, 0.43);
   padding: 10px 0;
 }
-/* line 78, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 #header h1 {
   font-size: 130%;
 }
-/* line 82, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 #header #slogan {
   font-size: 80%;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #main {
   color: black;
   overflow: hidden;
 }
 @media (min-width: 600px) {
-  /* line 87, ../sass/screen.scss */
+  /* line 90, ../sass/screen.scss */
   #main {
     width: 1000px;
     margin: 0 auto;
   }
 }
-/* line 96, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #main section {
   margin: 18px;
   border-radius: 8px;
   padding: 18px;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #content {
   background: rgba(125, 225, 255, 0.516);
 }
 @media (min-width: 600px) {
-  /* line 103, ../sass/screen.scss */
+  /* line 106, ../sass/screen.scss */
   #content {
     width: 528px;
     float: left;
   }
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 #sidebar {
   background: rgba(125, 225, 255, 0.301);
 }
 @media (min-width: 600px) {
-  /* line 112, ../sass/screen.scss */
+  /* line 115, ../sass/screen.scss */
   #sidebar {
     width: 328px;
     float: left;
   }
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 #footer {
   font-size: small;
   background: rgba(0, 0, 0, 0.9);
   padding: 30px 0 70px;
 }
 @media (min-width: 600px) {
-  /* line 121, ../sass/screen.scss */
+  /* line 124, ../sass/screen.scss */
   #footer {
     clear: both;
     margin-top: 100px;
   }
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 body.front #header h1 {
   font-size: 334%;
 }
-/* line 138, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 body.front #header #slogan {
   font-size: 110%;
 }
 @media (min-width: 600px) {
-  /* line 148, ../sass/screen.scss */
+  /* line 151, ../sass/screen.scss */
   body.front #header {
     position: fixed;
     width: 310px;
@@ -213,7 +213,7 @@ body.front #header #slogan {
     margin-left: -380px;
     padding: 143px 30px 0;
   }
-  /* line 161, ../sass/screen.scss */
+  /* line 164, ../sass/screen.scss */
   body.front #content, body.front #sidebar {
     float: none;
     width: auto;
@@ -221,7 +221,7 @@ body.front #header #slogan {
     color: white;
     background: transparent;
   }
-  /* line 170, ../sass/screen.scss */
+  /* line 173, ../sass/screen.scss */
   body.front #footer {
     color: black;
     background: rgba(255, 255, 255, 0.1462);
@@ -231,12 +231,12 @@ body.front #header #slogan {
   }
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 #nav ul li {
   display: inline-block;
   margin: 5px 2px;
 }
-/* line 185, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 #nav ul li a {
   color: black;
   font-size: 85%;
@@ -244,7 +244,7 @@ body.front #header #slogan {
   padding: 5px;
   border-radius: 5px;
 }
-/* line 192, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 #nav ul li a:hover {
   background: rgba(125, 225, 255, 0.344);
 }
