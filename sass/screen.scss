@@ -6,7 +6,7 @@
 @import "compass/reset";
 
 $site-width: 1000px;
-$section-margin: 18px;
+$section-margin: 6px;
 $section-padding: 18px;
 $section-gutter: $section-margin + $section-padding;
 
@@ -77,13 +77,16 @@ h2 {
 	background: rgba($color-a, $color-opacity);
 
 	padding: 10px 0;
-
 	h1 {
 		font-size: 130%;
 	}
 
 	#slogan {
 		font-size: 80%;
+	}
+
+	@include media-wide {
+		margin-bottom: 30px;
 	}
 }
 
@@ -108,7 +111,7 @@ h2 {
 
 	@include media-wide {
 		width: $site-width * 0.6 - 2*$section-gutter;
-		float: left;
+		float: right;
 	}
 }
 
@@ -149,6 +152,7 @@ body.front {
 		$header-pos: 120px;
 
 		#header {
+			margin: 0;
 			$padding: 30px;
 
 			position: fixed;
@@ -164,7 +168,7 @@ body.front {
 		#content, #sidebar {
 			float: none;
 			width: auto;		
-			padding-left: $header-pos + $header-width + 24px;
+			padding-left: $header-pos + $header-width + $section-padding*2;
 
 			color: white;
 			background: transparent;
