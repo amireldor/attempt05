@@ -183,28 +183,39 @@ body.front {
 			background: rgba(white, $color-opacity*0.34);
 			width: $site-width*0.34;
 			margin: 100px auto 0;
-			padding: 0;
+			padding: 10px 0 20px;
+
+			ul li a {
+				color: black;
+			}
 		}
 
 	}
 }
 
 #nav {
-	ul {
-		li {
-			display: inline-block;
-			a {
-				color: black;
-				font-size: 85%;
-				text-decoration: none;
-				padding: 5px;
-				border-radius: 5px;
+	ul li {
+		display: inline-block;
+		a {
+			color: black;
+			font-size: 85%;
+			text-decoration: none;
+			padding: 5px;
+			border-radius: 5px;
 
-				&:hover {
-					background: rgba($color-a, $color-opacity*0.8);
-				}
+			&:hover {
+				background: rgba($color-a, $color-opacity*0.8);
 			}
-			margin: 5px 2px;
+		}
+		margin: 5px 2px;
+	}
+}
+
+#footer-nav {
+	ul li {
+		line-height: 1.2;
+		a {
+			color: $color-a * 0.4;
 		}
 	}
 }
