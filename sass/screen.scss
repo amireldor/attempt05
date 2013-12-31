@@ -79,6 +79,10 @@ h2 {
 	padding: 10px 0;
 	h1 {
 		font-size: 130%;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
 	}
 
 	#slogan {
@@ -110,7 +114,7 @@ h2 {
 	background: rgba($color-a, $color-opacity * 1.2);
 
 	@include media-wide {
-		width: $site-width * 0.6 - 2*$section-gutter;
+		width: $site-width * 0.72 - 2*$section-gutter;
 		float: right;
 	}
 }
@@ -119,7 +123,7 @@ h2 {
 	background: rgba($color-a, $color-opacity * .7);
 
 	@include media-wide {
-		width: $site-width * 0.4 - 2*$section-gutter;
+		width: $site-width * 0.28 - 2*$section-gutter;
 		float: left;
 	}
 }
