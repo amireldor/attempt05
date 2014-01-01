@@ -138,61 +138,6 @@ h2 {
 	}
 }
 
-body.front {
-
-	#header {
-		h1 {
-			font-size: 334%;
-		}
-
-		#slogan {
-			font-size: 110%;
-		}
-	}
-
-	@include media-wide {
-
-		$header-width: 340px;
-		$header-pos: 120px;
-
-		#header {
-			margin: 0;
-			$padding: 30px;
-
-			position: fixed;
-			width: $header-width - $padding;
-			top: 0;
-			bottom: 0;
-			left: 50%;
-			margin-left: -($site-width/2) + $header-pos;
-
-			padding: 143px $padding 0;
-		}
-
-		#content, #sidebar {
-			float: none;
-			width: auto;		
-			padding-left: $header-pos + $header-width + $section-padding*2;
-
-			color: white;
-			background: transparent;
-		}
-
-		#footer {
-			color: black;
-			background: rgba(white, $color-opacity*0.34);
-			width: $site-width*0.34;
-			margin: 100px auto 0;
-			padding: 10px 0 20px;
-
-			ul li a {
-				color: black;
-			}
-		}
-
-	}
-}
-
 #nav {
 	ul li {
 		display: inline-block;
@@ -219,3 +164,5 @@ body.front {
 		}
 	}
 }
+
+@import 'front';

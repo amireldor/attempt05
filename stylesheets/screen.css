@@ -205,16 +205,43 @@ h2 {
   }
 }
 
+/* line 142, ../sass/screen.scss */
+#nav ul li {
+  display: inline-block;
+  margin: 5px 2px;
+}
 /* line 144, ../sass/screen.scss */
+#nav ul li a {
+  color: black;
+  font-size: 85%;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* line 151, ../sass/screen.scss */
+#nav ul li a:hover {
+  background: rgba(125, 225, 255, 0.344);
+}
+
+/* line 160, ../sass/screen.scss */
+#footer-nav ul li {
+  line-height: 1.2;
+}
+/* line 162, ../sass/screen.scss */
+#footer-nav ul li a {
+  color: #325a66;
+}
+
+/* line 4, ../sass/front.scss */
 body.front #header h1 {
   font-size: 334%;
 }
-/* line 148, ../sass/screen.scss */
+/* line 8, ../sass/front.scss */
 body.front #header #slogan {
   font-size: 110%;
 }
 @media (min-width: 600px) {
-  /* line 158, ../sass/screen.scss */
+  /* line 18, ../sass/front.scss */
   body.front #header {
     margin: 0;
     position: fixed;
@@ -225,7 +252,7 @@ body.front #header #slogan {
     margin-left: -380px;
     padding: 143px 30px 0;
   }
-  /* line 172, ../sass/screen.scss */
+  /* line 32, ../sass/front.scss */
   body.front #content, body.front #sidebar {
     float: none;
     width: auto;
@@ -233,7 +260,7 @@ body.front #header #slogan {
     color: white;
     background: transparent;
   }
-  /* line 181, ../sass/screen.scss */
+  /* line 41, ../sass/front.scss */
   body.front #footer {
     color: black;
     background: rgba(255, 255, 255, 0.1462);
@@ -241,35 +268,8 @@ body.front #header #slogan {
     margin: 100px auto 0;
     padding: 10px 0 20px;
   }
-  /* line 188, ../sass/screen.scss */
+  /* line 48, ../sass/front.scss */
   body.front #footer ul li a {
     color: black;
   }
-}
-
-/* line 197, ../sass/screen.scss */
-#nav ul li {
-  display: inline-block;
-  margin: 5px 2px;
-}
-/* line 199, ../sass/screen.scss */
-#nav ul li a {
-  color: black;
-  font-size: 85%;
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
-}
-/* line 206, ../sass/screen.scss */
-#nav ul li a:hover {
-  background: rgba(125, 225, 255, 0.344);
-}
-
-/* line 215, ../sass/screen.scss */
-#footer-nav ul li {
-  line-height: 1.2;
-}
-/* line 217, ../sass/screen.scss */
-#footer-nav ul li a {
-  color: #325a66;
 }
