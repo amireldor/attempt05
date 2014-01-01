@@ -4,11 +4,13 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3/box-sizing";
 
 $site-width: 1000px;
+$narrow-width: 600px;
 $section-margin: 6px;
 $section-padding: 18px;
-$section-gutter: $section-margin + $section-padding;
+$section-spacing: 18px; // on the 2 col layout
 
 $color-bg: #00284c;
 $color-a: #7de1ff;
@@ -17,7 +19,14 @@ $color-opacity: .43;
 $bg-img-url: "../waterfall.jpg";
 
 @mixin media-wide {
-	@media (min-width: 600px) {
+	@media (min-width: $narrow-width) {
+		@content;
+	}
+}
+
+@mixin media-need-shrink {
+	// When the wide window/screen view is too wide for the whole screen
+	@media (min-width: $narrow-width) and (max-width: $site-width - 1) {
 		@content;
 	}
 }
@@ -97,16 +106,26 @@ h2 {
 #main {
 	color: black;
 
-	overflow: hidden;
 	@include media-wide {
 		width: $site-width;
 		margin: 0 auto;
+		overflow: hidden;
+
+		@include media-need-shrink {
+			width: 100%;
+		}
+
 	}
 
 	section {
-		margin: $section-margin;
 		border-radius: 8px;
+		margin: $section-margin;
 		padding: $section-padding;
+		@include box-sizing("border-box");
+
+		@include media-wide {
+			margin: 0;
+		}
 	}
 }
 
@@ -114,18 +133,26 @@ h2 {
 	background: rgba($color-a, $color-opacity * 1.2);
 
 	@include media-wide {
-		width: $site-width * 0.72 - 2*$section-gutter;
+		width: $site-width * 0.72 - $section-spacing/2;
 		float: right;
+		@include media-need-shrink {
+			width: 79%;
+		}
 	}
+
 }
 
 #sidebar {
 	background: rgba($color-a, $color-opacity * .7);
 
 	@include media-wide {
-		width: $site-width * 0.28 - 2*$section-gutter;
+		width: $site-width * 0.28 - $section-spacing/2;
 		float: left;
+		@include media-need-shrink {
+			width: 20%;
+		}
 	}
+
 }
 
 #footer {
