@@ -6,30 +6,7 @@
 @import "compass/reset";
 @import "compass/css3/box-sizing";
 
-$site-width: 1000px;
-$narrow-width: 600px;
-$section-margin: 6px;
-$section-padding: 18px;
-$section-spacing: 18px; // on the 2 col layout
-
-$color-bg: #00284c;
-$color-a: #7de1ff;
-$color-opacity: .43;
-
-$bg-img-url: "../waterfall.jpg";
-
-@mixin media-wide {
-	@media (min-width: $narrow-width) {
-		@content;
-	}
-}
-
-@mixin media-need-shrink {
-	// When the wide window/screen view is too wide for the whole screen
-	@media (min-width: $narrow-width) and (max-width: $site-width - 1) {
-		@content;
-	}
-}
+@import "globals";
 
 body {
 	color: white;

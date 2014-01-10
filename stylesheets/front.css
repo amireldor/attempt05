@@ -1,83 +1,55 @@
-/*
-Syntax error: Undefined mixin 'media-wide'.
-        on line 13 of /home/amir/Desktop/wood/attempt05/sass/front.scss, in `media-wide'
-        from line 13 of /home/amir/Desktop/wood/attempt05/sass/front.scss
-
-Backtrace:
-/home/amir/Desktop/wood/attempt05/sass/front.scss:13:in `media-wide'
-/home/amir/Desktop/wood/attempt05/sass/front.scss:13
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/engine.rb:315:in `_render'
-/var/lib/gems/1.9.1/gems/sass-3.2.13/lib/sass/engine.rb:262:in `render'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:31:in `create'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:26:in `block in created'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `created'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:17:in `refresh'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:12:in `block in add_handler'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:200:in `call'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:200:in `block in watch'
-/usr/lib/ruby/vendor_ruby/rb-inotify/watcher.rb:41:in `[]'
-/usr/lib/ruby/vendor_ruby/rb-inotify/watcher.rb:41:in `callback!'
-/usr/lib/ruby/vendor_ruby/rb-inotify/event.rb:128:in `callback!'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:233:in `block in process'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:233:in `each'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:233:in `process'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:216:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:20:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'media-wide'.\A         on line 13 of /home/amir/Desktop/wood/attempt05/sass/front.scss, in `media-wide'\A         from line 13 of /home/amir/Desktop/wood/attempt05/sass/front.scss"; }
+/* line 6, ../sass/front.scss */
+body.front #header h1 {
+  font-size: 334%;
+}
+/* line 10, ../sass/front.scss */
+body.front #header #slogan {
+  font-size: 110%;
+}
+@media (min-width: 600px) {
+  /* line 21, ../sass/front.scss */
+  body.front #header {
+    margin: 0;
+    position: fixed;
+    width: 310px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -380px;
+    padding: 143px 30px 0;
+  }
+  /* line 39, ../sass/front.scss */
+  body.front #content, body.front #sidebar {
+    float: none;
+    width: auto;
+    padding-left: 496px;
+    color: white;
+    background: transparent;
+  }
+  /* line 53, ../sass/front.scss */
+  body.front #footer {
+    color: black;
+    background: rgba(255, 255, 255, 0.1462);
+    width: 340px;
+    margin: 100px auto 0;
+    padding: 10px 0 20px;
+  }
+  /* line 60, ../sass/front.scss */
+  body.front #footer ul li a {
+    color: black;
+  }
+}
+@media (min-width: 600px) and (min-width: 600px) and (max-width: 999px) {
+  /* line 21, ../sass/front.scss */
+  body.front #header {
+    left: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 600px) and (min-width: 600px) and (max-width: 999px) {
+  /* line 39, ../sass/front.scss */
+  body.front #content, body.front #sidebar {
+    padding-left: 370px;
+    padding-right: 0;
+  }
+}
