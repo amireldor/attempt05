@@ -14,25 +14,35 @@ body.front {
 
 		$header-width: 340px;
 		$header-pos: 120px;
+		$header-padding: 30px;
 
 		#header {
 			margin: 0;
-			$padding: 30px;
 
 			position: fixed;
-			width: $header-width - $padding;
+			width: $header-width - $header-padding;
 			top: 0;
 			bottom: 0;
 			left: 50%;
 			margin-left: -($site-width/2) + $header-pos;
 
-			padding: 143px $padding 0;
+			padding: 143px $header-padding 0;
+
+			@include media-need-shrink {
+				left: 0;
+				margin-left: 0;
+			}
 		}
 
 		#content, #sidebar {
 			float: none;
 			width: auto;		
 			padding-left: $header-pos + $header-width + $section-padding*2;
+
+			@include media-need-shrink {
+				padding-left: $header-width + $header-padding;
+				padding-right: 0;
+			}
 
 			color: white;
 			background: transparent;
